@@ -1,7 +1,14 @@
 import streamlit as st
 
 # Configuration de la page
-st.set_page_config(
+st.set_page_config
+(# Juste après la config de la page
+import streamlit as st
+
+# Ajoute ces deux lignes pour le logo :
+from PIL import Image
+logo = Image.open("logo.png")
+st.image(logo, width=200) # Tu peux changer 200 pour agrandir ou rétrécir
     page_title="Le Cockpit - DYNIA",
     page_icon="🚀",
     layout="centered"
